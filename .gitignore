@@ -1,0 +1,7 @@
+data/
+.venv/
+SEQ_GTFS.zip
+STEPbySTEP.txt
+*.pdf
+Progetto portfolio Data Engineering.pdf
+
