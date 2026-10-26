@@ -1,7 +1,14 @@
+# Local files
 data/
 .venv/
 SEQ_GTFS.zip
 STEPbySTEP.txt
 *.pdf
-Progetto portfolio Data Engineering.pdf
-
+docs/
+test.txt
+# Terraform files
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfvars
+crash.log

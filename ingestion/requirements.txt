@@ -1,0 +1,6 @@
+requests
+gtfs-realtime-bindings
+protobuf
+confluent-kafka
+boto3
+pyarrow
