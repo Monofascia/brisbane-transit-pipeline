@@ -1,0 +1,884 @@
+[0m19:38:06.096608 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe55065350>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe550679d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe55342710>]}
+
+
+============================== 19:38:06.102617 | 68749579-a947-4350-a94a-8ad6398ec22b ==============================
+[0m19:38:06.102617 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:38:06.104216 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'no_print': 'None', 'target_path': 'None', 'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'introspect': 'True', 'version_check': 'True', 'printer_width': '80', 'hints_enabled': 'True', 'maximum_seed_size_mib': '1', 'fail_fast': 'False', 'quiet': 'False', 'use_experimental_parser': 'False', 'partial_parse': 'True', 'static_parser': 'True', 'log_format': 'default', 'send_anonymous_usage_stats': 'True', 'debug': 'False', 'invocation_command': 'dbt debug --profiles-dir .', 'log_cache_events': 'False', 'profiles_dir': '.', 'warn_error': 'None', 'write_json': 'True', 'empty': 'None', 'use_colors': 'True', 'indirect_selection': 'eager'}
+[0m19:38:06.134509 [info ] [MainThread]: dbt version: 1.12.6
+[0m19:38:06.136317 [info ] [MainThread]: python version: 3.11.15
+[0m19:38:06.137734 [info ] [MainThread]: python path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/.venv-dbt/bin/python3.11
+[0m19:38:06.139465 [info ] [MainThread]: os info: Linux-6.8.0-142-generic-x86_64-with-glibc2.39
+[0m19:38:06.152600 [info ] [MainThread]: Using profiles dir at .
+[0m19:38:06.154345 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m19:38:06.156131 [info ] [MainThread]: Using dbt_project.yml file at /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/dbt_project.yml
+[0m19:38:06.491867 [info ] [MainThread]: Configuration:
+[0m19:38:06.492580 [info ] [MainThread]:   profiles.yml file [[31mERROR invalid[0m]
+[0m19:38:06.493202 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:38:06.493767 [info ] [MainThread]: Required dependencies:
+[0m19:38:06.494382 [debug] [MainThread]: Executing "git --help"
+[0m19:38:06.507483 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nQuesti sono i comandi Git comuni usati in varie situazioni:\n\ncrea un'area di lavoro (vedi anche: git help tutorial)\n   clone     Clona un repository in una nuova directory\n   init      Crea un repository Git vuoto o ne reinizializza uno esistente\n\nlavora sulle modifiche correnti (vedi anche: git help everyday)\n   add       Aggiunge i contenuti del file all'indice\n   mv        Sposta o rinomina un file, una directory o un collegamento simbolico\n   restore   Ripristina i file nell'albero di lavoro\n   rm        Rimuove file dall'albero di lavoro e dall'indice\n\nesamina la cronologia e lo stato (vedi anche: git help revisions)\n   bisect    Usa la ricerca binaria per trovare il commit che ha introdotto un bug\n   diff      Visualizza le modifiche fra commit, un commit e l'albero di lavoro, ecc.\n   grep      Stampa le righe corrispondenti a un'espressione regolare\n   log       Visualizza i log dei commit\n   show      Visualizza vari tipi di oggetti\n   status    Visualizza lo stato dell'albero di lavoro\n\naumenta, contrassegna e metti a punto la cronologia comune\n   branch    Elenca, crea o elimina branch\n   commit    Registra modifiche al repository\n   merge     Unisce due o pi\xc3\xb9 cronologie di sviluppo\n   rebase    Riapplica dei commit dopo l'ultimo commit di un branch\n   reset     Ripristina l'HEAD corrente allo stato specificato\n   switch    Passa da un branch a un altro\n   tag       Crea, elenca, elimina o verifica un oggetto tag firmato con GPG\n\ncollabora (vedi anche: git help workflows)\n   fetch     Scarica oggetti e riferimenti da un altro repository\n   pull      Esegue il fetch e l'integrazione con un altro repository o un branch locale\n   push      Aggiorna i riferimenti remoti insieme agli oggetti associati\n\n'git help -a' e 'git help -g' elencano i sottocomandi disponibili e\nalcune guide concettuali. Vedi 'git help <comando>' o 'git help <concetto>'\nper leggere ulteriori informazioni su un sottocomando o su un concetto\nspecifici.\nVedi 'git help git' per una panoramica del sistema.\n""
+[0m19:38:06.508322 [debug] [MainThread]: STDERR: "b''"
+[0m19:38:06.508877 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:38:06.509465 [info ] [MainThread]: Connection test skipped since no profile was found
+[0m19:38:06.510072 [info ] [MainThread]: [31m1 check failed:[0m
+[0m19:38:06.510662 [info ] [MainThread]: Profile loading failed for the following reason:
+Runtime Error
+  Could not find profile named 'transit'
+
+
+[0m19:38:06.512083 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.6913742, "process_in_blocks": "496", "process_kernel_time": 0.330308, "process_mem_max_rss": "110120", "process_out_blocks": "24", "process_user_time": 3.229237}
+[0m19:38:06.513124 [debug] [MainThread]: Command `dbt debug` failed at 19:38:06.512904 after 0.69 seconds
+[0m19:38:06.513988 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe59117ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe5520fa50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x77fe551ffe10>]}
+[0m19:38:06.514961 [debug] [MainThread]: Flushing usage events
+[0m19:38:07.558397 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:43:16.739990 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47012ff810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47014132d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47012ff950>]}
+
+
+============================== 19:43:16.745082 | 4e6c0e56-019e-4599-acae-546481796891 ==============================
+[0m19:43:16.745082 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:43:16.746569 [debug] [MainThread]: running dbt with arguments {'cache_selected_only': 'False', 'partial_parse': 'True', 'indirect_selection': 'eager', 'maximum_seed_size_mib': '1', 'printer_width': '80', 'no_print': 'None', 'fail_fast': 'False', 'static_parser': 'True', 'target_path': 'None', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'quiet': 'False', 'hints_enabled': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'empty': 'None', 'send_anonymous_usage_stats': 'True', 'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'warn_error': 'None', 'version_check': 'True', 'profiles_dir': '.', 'introspect': 'True', 'use_experimental_parser': 'False', 'use_colors': 'True', 'debug': 'False', 'log_cache_events': 'False', 'log_format': 'default'}
+[0m19:43:16.763494 [info ] [MainThread]: dbt version: 1.12.6
+[0m19:43:16.764414 [info ] [MainThread]: python version: 3.11.15
+[0m19:43:16.765349 [info ] [MainThread]: python path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/.venv-dbt/bin/python3.11
+[0m19:43:16.766392 [info ] [MainThread]: os info: Linux-6.8.0-142-generic-x86_64-with-glibc2.39
+[0m19:43:18.715343 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:43:18.716171 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:43:18.716787 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:43:19.865858 [info ] [MainThread]: Using profiles dir at .
+[0m19:43:19.867152 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m19:43:19.868396 [info ] [MainThread]: Using dbt_project.yml file at /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/dbt_project.yml
+[0m19:43:19.869519 [info ] [MainThread]: adapter type: databricks
+[0m19:43:19.870586 [info ] [MainThread]: adapter version: 1.13.0
+[0m19:43:20.238116 [info ] [MainThread]: Configuration:
+[0m19:43:20.239007 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m19:43:20.239696 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m19:43:20.240341 [info ] [MainThread]: Required dependencies:
+[0m19:43:20.241050 [debug] [MainThread]: Executing "git --help"
+[0m19:43:20.245531 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nQuesti sono i comandi Git comuni usati in varie situazioni:\n\ncrea un'area di lavoro (vedi anche: git help tutorial)\n   clone     Clona un repository in una nuova directory\n   init      Crea un repository Git vuoto o ne reinizializza uno esistente\n\nlavora sulle modifiche correnti (vedi anche: git help everyday)\n   add       Aggiunge i contenuti del file all'indice\n   mv        Sposta o rinomina un file, una directory o un collegamento simbolico\n   restore   Ripristina i file nell'albero di lavoro\n   rm        Rimuove file dall'albero di lavoro e dall'indice\n\nesamina la cronologia e lo stato (vedi anche: git help revisions)\n   bisect    Usa la ricerca binaria per trovare il commit che ha introdotto un bug\n   diff      Visualizza le modifiche fra commit, un commit e l'albero di lavoro, ecc.\n   grep      Stampa le righe corrispondenti a un'espressione regolare\n   log       Visualizza i log dei commit\n   show      Visualizza vari tipi di oggetti\n   status    Visualizza lo stato dell'albero di lavoro\n\naumenta, contrassegna e metti a punto la cronologia comune\n   branch    Elenca, crea o elimina branch\n   commit    Registra modifiche al repository\n   merge     Unisce due o pi\xc3\xb9 cronologie di sviluppo\n   rebase    Riapplica dei commit dopo l'ultimo commit di un branch\n   reset     Ripristina l'HEAD corrente allo stato specificato\n   switch    Passa da un branch a un altro\n   tag       Crea, elenca, elimina o verifica un oggetto tag firmato con GPG\n\ncollabora (vedi anche: git help workflows)\n   fetch     Scarica oggetti e riferimenti da un altro repository\n   pull      Esegue il fetch e l'integrazione con un altro repository o un branch locale\n   push      Aggiorna i riferimenti remoti insieme agli oggetti associati\n\n'git help -a' e 'git help -g' elencano i sottocomandi disponibili e\nalcune guide concettuali. Vedi 'git help <comando>' o 'git help <concetto>'\nper leggere ulteriori informazioni su un sottocomando o su un concetto\nspecifici.\nVedi 'git help git' per una panoramica del sistema.\n""
+[0m19:43:20.247601 [debug] [MainThread]: STDERR: "b''"
+[0m19:43:20.248792 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m19:43:20.250192 [info ] [MainThread]: Connection:
+[0m19:43:20.251777 [info ] [MainThread]:   host: dbc-e5dac923-558c.cloud.databricks.com
+[0m19:43:20.253260 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/a63bef4f4eddec4e
+[0m19:43:20.254703 [info ] [MainThread]:   catalog: workspace
+[0m19:43:20.256116 [info ] [MainThread]:   schema: dbt
+[0m19:43:20.257648 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:43:20.532609 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m19:43:20.533523 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m19:43:37.850298 [info ] [MainThread]: Databricks adapter: SPOG discovery probe to 'https://dbc-e5dac923-558c.cloud.databricks.com/.well-known/databricks-config' failed after 3 attempts (last error: HTTPSConnectionPool(host='dbc-e5dac923-558c.cloud.databricks.com', port=443): Read timed out. (read timeout=5)). Proceeding as a non-SPOG host. If dbc-e5dac923-558c.cloud.databricks.com is a SPOG (unified) workspace, routing errors may follow; verify network reachability to /.well-known/databricks-config.
+[0m19:43:37.868513 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type=None): no
+[0m19:43:37.870982 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m19:43:37.873637 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m19:43:37.876939 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m19:43:37.879270 [debug] [MainThread]: Using databricks connection "debug"
+[0m19:43:37.881344 [debug] [MainThread]: On debug: select 1 as id
+[0m19:43:37.884374 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m19:43:51.660399 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1d6ed-563b-1047-8295-fd2cfc5098be) - Created
+[0m19:43:54.389783 [debug] [MainThread]: SQL status: OK in 16.510 seconds
+[0m19:43:54.395687 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1d6ed-563b-1047-8295-fd2cfc5098be, command-id=01f1d6ed-5938-12c7-903b-6775b3e0b2de) - Closing
+[0m19:43:54.398002 [debug] [MainThread]: On debug: Close
+[0m19:43:54.400200 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1d6ed-563b-1047-8295-fd2cfc5098be) - Closing
+[0m19:43:54.645409 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m19:43:54.647630 [info ] [MainThread]: [32mAll checks passed![0m
+[0m19:43:54.651322 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 38.07956, "process_in_blocks": "4368", "process_kernel_time": 0.599418, "process_mem_max_rss": "254692", "process_out_blocks": "48", "process_user_time": 7.608927}
+[0m19:43:54.655918 [debug] [MainThread]: Command `dbt debug` succeeded at 19:43:54.655301 after 38.08 seconds
+[0m19:43:54.658183 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4705213b10>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e47012ff810>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7e4701427650>]}
+[0m19:43:54.660172 [debug] [MainThread]: Flushing usage events
+[0m19:43:59.957213 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:51:13.002290 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef47607a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef47606b90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef47604210>]}
+
+
+============================== 19:51:13.007148 | d29353eb-9075-4b2f-b6a1-82e3f69cfb7a ==============================
+[0m19:51:13.007148 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:51:13.009371 [debug] [MainThread]: running dbt with arguments {'printer_width': '80', 'quiet': 'False', 'log_format': 'default', 'empty': 'None', 'no_print': 'None', 'target_path': 'None', 'write_json': 'True', 'cache_selected_only': 'False', 'fail_fast': 'False', 'hints_enabled': 'True', 'warn_error': 'None', 'log_cache_events': 'False', 'introspect': 'True', 'use_experimental_parser': 'False', 'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'indirect_selection': 'eager', 'debug': 'False', 'version_check': 'True', 'static_parser': 'True', 'invocation_command': 'dbt deps', 'use_colors': 'True', 'profiles_dir': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt', 'partial_parse': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'send_anonymous_usage_stats': 'True', 'maximum_seed_size_mib': '1'}
+[0m19:51:13.317199 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': 'd29353eb-9075-4b2f-b6a1-82e3f69cfb7a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef4760bd10>]}
+[0m19:51:13.360371 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-9qvlid1j'
+[0m19:51:13.361864 [debug] [MainThread]: Making package index registry request: GET https://hub.getdbt.com/api/v1/index.json
+[0m19:51:14.064919 [debug] [MainThread]: Response from registry index: GET https://hub.getdbt.com/api/v1/index.json 200
+[0m19:51:14.073476 [debug] [MainThread]: Making package registry request: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json
+[0m19:51:14.549476 [debug] [MainThread]: Response from registry: GET https://hub.getdbt.com/api/v1/dbt-labs/dbt_utils.json 200
+[0m19:51:14.631370 [info ] [MainThread]: Updating lock file in file path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/package-lock.yml
+[0m19:51:14.644904 [debug] [MainThread]: Set downloads directory='/tmp/dbt-downloads-6ep0guy9'
+[0m19:51:14.666274 [info ] [MainThread]: Installing dbt-labs/dbt_utils
+[0m19:51:16.167105 [info ] [MainThread]: Installed from version 1.4.1
+[0m19:51:16.168227 [info ] [MainThread]: Up to date!
+[0m19:51:16.169277 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'package', 'label': 'd29353eb-9075-4b2f-b6a1-82e3f69cfb7a', 'property_': 'install', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef47f8afd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef47556350>]}
+[0m19:51:16.171528 [debug] [MainThread]: Resource report: {"command_name": "deps", "command_success": true, "command_wall_clock_time": 3.29784, "process_in_blocks": "1104", "process_kernel_time": 0.442388, "process_mem_max_rss": "113128", "process_out_blocks": "2320", "process_user_time": 4.029431}
+[0m19:51:16.172919 [debug] [MainThread]: Command `dbt deps` succeeded at 19:51:16.172549 after 3.30 seconds
+[0m19:51:16.174639 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef475e6d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef4774a110>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76ef4772b450>]}
+[0m19:51:16.176287 [debug] [MainThread]: Flushing usage events
+[0m19:51:17.809488 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m19:51:51.944455 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768973316a90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7689731f7d50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7689731f7dd0>]}
+
+
+============================== 19:51:51.949549 | 6aea8677-7cc2-4e44-b84b-c21c4e87578a ==============================
+[0m19:51:51.949549 [info ] [MainThread]: Running with dbt=1.12.6
+[0m19:51:51.951186 [debug] [MainThread]: running dbt with arguments {'partial_parse': 'True', 'use_experimental_parser': 'False', 'invocation_command': 'dbt build --profiles-dir .', 'indirect_selection': 'eager', 'write_json': 'True', 'debug': 'False', 'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'warn_error': 'None', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'empty': 'False', 'quiet': 'False', 'profiles_dir': '.', 'no_print': 'None', 'cache_selected_only': 'False', 'log_cache_events': 'False', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'log_format': 'default', 'introspect': 'True', 'use_colors': 'True', 'fail_fast': 'False', 'hints_enabled': 'True', 'target_path': 'None', 'send_anonymous_usage_stats': 'True'}
+[0m19:51:53.776019 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m19:51:53.776893 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m19:51:53.777571 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m19:51:54.949968 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768951936d90>]}
+[0m19:51:55.064480 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7689731c5ad0>]}
+[0m19:51:55.065614 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m19:51:55.350728 [debug] [MainThread]: checksum: 9efc782fc89ff62541e7dc496c0f1c38e1b11dec8c017c8b077b3c7e87e5248a, vars: {}, profile: transit, target: dev, version: 1.12.6
+[0m19:51:55.352214 [info ] [MainThread]: Unable to do partial parsing because saved manifest not found. Starting full parse.
+[0m19:51:55.352871 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'partial_parser', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768951568390>]}
+[0m19:52:00.533464 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768973316450>]}
+[0m19:52:00.865678 [debug] [MainThread]: Wrote artifact WritableManifest to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/manifest.json
+[0m19:52:00.874999 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/semantic_manifest.json
+[0m19:52:00.909267 [debug] [MainThread]: Wrote artifact OsiDocument to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/osi_document.json
+[0m19:52:00.960517 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768951754190>]}
+[0m19:52:00.962115 [info ] [MainThread]: Found 5 models, 5 data tests, 1 source, 898 macros
+[0m19:52:00.968153 [info ] [MainThread]: 
+[0m19:52:00.969595 [info ] [MainThread]: Concurrency: 4 threads (target='dev')
+[0m19:52:00.970894 [info ] [MainThread]: 
+[0m19:52:00.972706 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:52:00.973533 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:52:00.995681 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m19:52:00.998587 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace) - Creating connection
+[0m19:52:01.000451 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m19:52:01.001672 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace'
+[0m19:52:01.042145 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m19:52:01.048971 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m19:52:01.050182 [debug] [ThreadPool]: Using databricks connection "list_workspace"
+[0m19:52:01.050994 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:01.051905 [debug] [ThreadPool]: On list_workspace: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "list_workspace"} */
+
+    
+
+  SHOW SCHEMAS IN `workspace`
+
+
+  
+[0m19:52:01.053260 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:06.611706 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-7f38-1607-8cee-27914dbdc7df) - Created
+[0m19:52:06.613917 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-7f6c-1730-a4a7-1ba6346261d5) - Created
+[0m19:52:08.004195 [debug] [ThreadPool]: SQL status: OK in 6.950 seconds
+[0m19:52:08.006476 [debug] [ThreadPool]: SQL status: OK in 6.950 seconds
+[0m19:52:08.028354 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-7f38-1607-8cee-27914dbdc7df, command-id=01f1d6ee-8049-17c5-9d84-ec1d479edbd1) - Closing
+[0m19:52:08.033063 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-7f6c-1730-a4a7-1ba6346261d5, command-id=01f1d6ee-804d-1387-87f2-295aeaf13d0f) - Closing
+[0m19:52:08.035074 [debug] [ThreadPool]: On list_workspace: Close
+[0m19:52:08.036784 [debug] [ThreadPool]: On list_workspace: Close
+[0m19:52:08.038313 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-7f38-1607-8cee-27914dbdc7df) - Closing
+[0m19:52:08.039808 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-7f6c-1730-a4a7-1ba6346261d5) - Closing
+[0m19:52:08.374034 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_workspace_dbt) - Creating connection
+[0m19:52:08.381581 [debug] [ThreadPool]: Acquiring new databricks connection 'create_workspace_dbt'
+[0m19:52:08.378362 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=create_workspace_dbt_marts) - Creating connection
+[0m19:52:08.385527 [debug] [ThreadPool]: Creating schema "database: "workspace"
+schema: "dbt"
+"
+[0m19:52:08.387729 [debug] [ThreadPool]: Acquiring new databricks connection 'create_workspace_dbt_marts'
+[0m19:52:08.406289 [debug] [ThreadPool]: Using databricks connection "create_workspace_dbt"
+[0m19:52:08.409073 [debug] [ThreadPool]: Creating schema "database: "workspace"
+schema: "dbt_marts"
+"
+[0m19:52:08.411294 [debug] [ThreadPool]: On create_workspace_dbt: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "create_workspace_dbt"} */
+create schema if not exists `workspace`.`dbt`
+  
+[0m19:52:08.418636 [debug] [ThreadPool]: Using databricks connection "create_workspace_dbt_marts"
+[0m19:52:08.420516 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:08.422980 [debug] [ThreadPool]: On create_workspace_dbt_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "create_workspace_dbt_marts"} */
+create schema if not exists `workspace`.`dbt_marts`
+  
+[0m19:52:08.426774 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:09.587907 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-81d3-185e-a7e0-eae401fa5896) - Created
+[0m19:52:09.617601 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-81df-10aa-a94e-49de0afc5c9d) - Created
+[0m19:52:10.324073 [debug] [ThreadPool]: SQL status: OK in 1.900 seconds
+[0m19:52:10.330179 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-81d3-185e-a7e0-eae401fa5896, command-id=01f1d6ee-8209-1e0f-9a9e-f8fd04994a9c) - Closing
+[0m19:52:10.332483 [debug] [ThreadPool]: On create_workspace_dbt_marts: Close
+[0m19:52:10.334388 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-81d3-185e-a7e0-eae401fa5896) - Closing
+[0m19:52:10.344097 [debug] [ThreadPool]: SQL status: OK in 1.920 seconds
+[0m19:52:10.350295 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-81df-10aa-a94e-49de0afc5c9d, command-id=01f1d6ee-820c-1628-85f3-97c568063223) - Closing
+[0m19:52:10.353901 [debug] [ThreadPool]: On create_workspace_dbt: Close
+[0m19:52:10.356476 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-81df-10aa-a94e-49de0afc5c9d) - Closing
+[0m19:52:10.730072 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_dbt) - Creating connection
+[0m19:52:10.733790 [debug] [ThreadPool]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=list_workspace_dbt_marts) - Creating connection
+[0m19:52:10.735954 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_dbt'
+[0m19:52:10.738355 [debug] [ThreadPool]: Acquiring new databricks connection 'list_workspace_dbt_marts'
+[0m19:52:10.758944 [debug] [ThreadPool]: Using databricks connection "list_workspace_dbt"
+[0m19:52:10.765708 [debug] [ThreadPool]: Using databricks connection "list_workspace_dbt_marts"
+[0m19:52:10.769121 [debug] [ThreadPool]: On list_workspace_dbt: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "list_workspace_dbt"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'dbt'
+
+  
+[0m19:52:10.771607 [debug] [ThreadPool]: On list_workspace_dbt_marts: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "connection_name": "list_workspace_dbt_marts"} */
+
+    
+SELECT
+  table_name,
+  if(table_type IN ('EXTERNAL', 'MANAGED', 'MANAGED_SHALLOW_CLONE', 'EXTERNAL_SHALLOW_CLONE'), 'table', lower(table_type)) AS table_type,
+  lower(data_source_format) AS file_format,
+  table_owner,
+  if(
+    table_type IN (
+      'EXTERNAL',
+      'MANAGED',
+      'MANAGED_SHALLOW_CLONE',
+      'EXTERNAL_SHALLOW_CLONE'
+    ),
+    lower(table_type),
+    NULL
+  ) AS databricks_table_type
+FROM `system`.`information_schema`.`tables`
+WHERE table_catalog = 'workspace'
+  AND table_schema = 'dbt_marts'
+
+  
+[0m19:52:10.773950 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:10.776230 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m19:52:12.357982 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-835c-1072-b623-b33d8319c2fa) - Created
+[0m19:52:12.360177 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-835d-1f89-98c2-53e951fbd423) - Created
+[0m19:52:13.771888 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m19:52:13.773443 [debug] [ThreadPool]: SQL status: OK in 3.000 seconds
+[0m19:52:13.779915 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-835d-1f89-98c2-53e951fbd423, command-id=01f1d6ee-83b1-16af-9f88-1600d10e5dfe) - Closing
+[0m19:52:13.781365 [debug] [ThreadPool]: On list_workspace_dbt: Close
+[0m19:52:13.782904 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-835d-1f89-98c2-53e951fbd423) - Closing
+[0m19:52:13.785634 [debug] [ThreadPool]: Databricks adapter: Cursor(session-id=01f1d6ee-835c-1072-b623-b33d8319c2fa, command-id=01f1d6ee-83af-1fcc-9f19-338407202b4c) - Closing
+[0m19:52:13.787909 [debug] [ThreadPool]: On list_workspace_dbt_marts: Close
+[0m19:52:13.788853 [debug] [ThreadPool]: Databricks adapter: Connection(session-id=01f1d6ee-835c-1072-b623-b33d8319c2fa) - Closing
+[0m19:52:14.211650 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76895118c6d0>]}
+[0m19:52:14.228604 [debug] [Thread-4 (]: Began running node model.transit.stg_stop_delays
+[0m19:52:14.230027 [info ] [Thread-4 (]: 1 of 9 START sql view model dbt.stg_stop_delays ................................ [RUN]
+[0m19:52:14.231746 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.transit.stg_stop_delays) - Creating connection
+[0m19:52:14.232774 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.transit.stg_stop_delays'
+[0m19:52:14.233671 [debug] [Thread-4 (]: Began compiling node model.transit.stg_stop_delays
+[0m19:52:14.249139 [debug] [Thread-4 (]: Writing injected SQL for node "model.transit.stg_stop_delays"
+[0m19:52:14.251068 [debug] [Thread-4 (]: Began executing node model.transit.stg_stop_delays
+[0m19:52:14.277589 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m19:52:14.333518 [debug] [Thread-4 (]: Creating view `workspace`.`dbt`.`stg_stop_delays`
+[0m19:52:14.360713 [debug] [Thread-4 (]: Writing runtime sql for node "model.transit.stg_stop_delays"
+[0m19:52:14.362089 [debug] [Thread-4 (]: Using databricks connection "model.transit.stg_stop_delays"
+[0m19:52:14.363266 [debug] [Thread-4 (]: On model.transit.stg_stop_delays: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.stg_stop_delays"} */
+
+  
+  
+  create or replace view `workspace`.`dbt`.`stg_stop_delays`
+  
+  
+  as (
+    -- dbt/models/staging/stg_stop_delays.sql
+select
+    start_date,
+    trip_id,
+    stop_sequence,
+    stop_id,
+    stop_name,
+    stop_lat,
+    stop_lon,
+    route_id,
+    route_short_name,
+    route_long_name,
+    mode,
+    delay_s,
+    delay_s / 60.0               as delay_min,
+    event_local_ts,
+    to_date(event_local_ts)      as service_day,
+    hour(event_local_ts)         as hour_of_day,
+    dayofweek(event_local_ts)    as day_of_week   -- 1 = domenica, 7 = sabato
+from `workspace`.`silver`.`stop_delays`
+where route_short_name is not null
+  )
+
+[0m19:52:14.364140 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:52:15.602486 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-8569-1c5d-a51d-633028fed3a6) - Created
+[0m19:52:18.161018 [debug] [Thread-4 (]: SQL status: OK in 3.800 seconds
+[0m19:52:18.165214 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1d6ee-8569-1c5d-a51d-633028fed3a6, command-id=01f1d6ee-85a0-1cbb-8927-6bbe8e0158dd) - Closing
+[0m19:52:18.194388 [debug] [Thread-4 (]: Applying tags to relation None
+[0m19:52:18.256452 [debug] [Thread-4 (]: On model.transit.stg_stop_delays: Close
+[0m19:52:18.258618 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-8569-1c5d-a51d-633028fed3a6) - Closing
+[0m19:52:18.662937 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x76893be730d0>]}
+[0m19:52:18.664654 [info ] [Thread-4 (]: 1 of 9 OK created sql view model dbt.stg_stop_delays ........................... [[32mOK[0m in 4.42s]
+[0m19:52:18.666318 [debug] [Thread-4 (]: Finished running node model.transit.stg_stop_delays
+[0m19:52:18.668698 [debug] [Thread-6 (]: Began running node test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238
+[0m19:52:18.670039 [debug] [Thread-7 (]: Began running node test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04
+[0m19:52:18.671421 [debug] [Thread-5 (]: Began running node test.transit.not_null_stg_stop_delays_delay_s.a3a933de21
+[0m19:52:18.672660 [info ] [Thread-6 (]: 2 of 9 START test dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600  [RUN]
+[0m19:52:18.674047 [debug] [Thread-4 (]: Began running node test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d
+[0m19:52:18.675020 [info ] [Thread-7 (]: 3 of 9 START test dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence  [RUN]
+[0m19:52:18.676167 [info ] [Thread-5 (]: 4 of 9 START test not_null_stg_stop_delays_delay_s ............................. [RUN]
+[0m19:52:18.677806 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238) - Creating connection
+[0m19:52:18.679316 [info ] [Thread-4 (]: 5 of 9 START test not_null_stg_stop_delays_stop_id ............................. [RUN]
+[0m19:52:18.681234 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04) - Creating connection
+[0m19:52:18.682918 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.transit.not_null_stg_stop_delays_delay_s.a3a933de21) - Creating connection
+[0m19:52:18.684020 [debug] [Thread-6 (]: Acquiring new databricks connection 'test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238'
+[0m19:52:18.685357 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d) - Creating connection
+[0m19:52:18.687082 [debug] [Thread-7 (]: Acquiring new databricks connection 'test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04'
+[0m19:52:18.688380 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.transit.not_null_stg_stop_delays_delay_s.a3a933de21'
+[0m19:52:18.689686 [debug] [Thread-6 (]: Began compiling node test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238
+[0m19:52:18.690662 [debug] [Thread-4 (]: Acquiring new databricks connection 'test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d'
+[0m19:52:18.691602 [debug] [Thread-7 (]: Began compiling node test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04
+[0m19:52:18.692757 [debug] [Thread-5 (]: Began compiling node test.transit.not_null_stg_stop_delays_delay_s.a3a933de21
+[0m19:52:18.699606 [debug] [Thread-4 (]: Began compiling node test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d
+[0m19:52:18.738942 [debug] [Thread-6 (]: Writing injected SQL for node "test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238"
+[0m19:52:18.748482 [debug] [Thread-7 (]: Writing injected SQL for node "test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04"
+[0m19:52:18.806903 [debug] [Thread-4 (]: Writing injected SQL for node "test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d"
+[0m19:52:18.808474 [debug] [Thread-5 (]: Writing injected SQL for node "test.transit.not_null_stg_stop_delays_delay_s.a3a933de21"
+[0m19:52:18.809917 [debug] [Thread-6 (]: Began executing node test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238
+[0m19:52:18.811529 [debug] [Thread-7 (]: Began executing node test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04
+[0m19:52:18.813272 [debug] [Thread-4 (]: Began executing node test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d
+[0m19:52:18.845801 [debug] [Thread-5 (]: Began executing node test.transit.not_null_stg_stop_delays_delay_s.a3a933de21
+[0m19:52:18.877971 [debug] [Thread-7 (]: Writing runtime sql for node "test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04"
+[0m19:52:18.883391 [debug] [Thread-4 (]: Writing runtime sql for node "test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d"
+[0m19:52:18.886117 [debug] [Thread-6 (]: Writing runtime sql for node "test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238"
+[0m19:52:18.890605 [debug] [Thread-5 (]: Writing runtime sql for node "test.transit.not_null_stg_stop_delays_delay_s.a3a933de21"
+[0m19:52:18.893180 [debug] [Thread-4 (]: Using databricks connection "test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d"
+[0m19:52:18.894624 [debug] [Thread-7 (]: Using databricks connection "test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04"
+[0m19:52:18.897749 [debug] [Thread-4 (]: On test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select stop_id
+from `workspace`.`dbt`.`stg_stop_delays`
+where stop_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:52:18.900423 [debug] [Thread-6 (]: Using databricks connection "test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238"
+[0m19:52:18.901364 [debug] [Thread-5 (]: Using databricks connection "test.transit.not_null_stg_stop_delays_delay_s.a3a933de21"
+[0m19:52:18.902788 [debug] [Thread-7 (]: On test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+
+
+
+
+with validation_errors as (
+
+    select
+        start_date, trip_id, stop_sequence
+    from `workspace`.`dbt`.`stg_stop_delays`
+    group by start_date, trip_id, stop_sequence
+    having count(*) > 1
+
+)
+
+select *
+from validation_errors
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:52:18.904720 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:52:18.906257 [debug] [Thread-6 (]: On test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+
+with meet_condition as(
+  select *
+  from `workspace`.`dbt`.`stg_stop_delays`
+),
+
+validation_errors as (
+  select *
+  from meet_condition
+  where
+    -- never true, defaults to an empty result set. Exists to ensure any combo of the `or` clauses below succeeds
+    1 = 2
+    -- records with a value >= min_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not delay_s >= -3600
+    -- records with a value <= max_value are permitted. The `not` flips this to find records that don't meet the rule.
+    or not delay_s <= 7200
+)
+
+select *
+from validation_errors
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:52:18.907547 [debug] [Thread-5 (]: On test.transit.not_null_stg_stop_delays_delay_s.a3a933de21: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "test.transit.not_null_stg_stop_delays_delay_s.a3a933de21"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select delay_s
+from `workspace`.`dbt`.`stg_stop_delays`
+where delay_s is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:52:18.908710 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m19:52:18.910950 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m19:52:18.913782 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m19:52:19.792238 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f0-12c0-a000-c48bfc86afd2) - Created
+[0m19:52:19.795924 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f2-15b5-939b-ef2ae944ba78) - Created
+[0m19:52:19.804556 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f2-1f33-8a75-e3ff8afa06a7) - Created
+[0m19:52:19.874392 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1d6ee-87fc-12e7-9905-4041b727ff01) - Created
+[0m19:52:21.802475 [debug] [Thread-5 (]: SQL status: OK in 2.890 seconds
+[0m19:52:21.808368 [debug] [Thread-4 (]: SQL status: OK in 2.900 seconds
+[0m19:52:21.827018 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1d6ee-87fc-12e7-9905-4041b727ff01, command-id=01f1d6ee-8828-17bd-8e34-fa8d2bbb7de4) - Closing
+[0m19:52:21.829558 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1d6ee-87f2-15b5-939b-ef2ae944ba78, command-id=01f1d6ee-8820-1737-8ff2-a13ce6d929ef) - Closing
+[0m19:52:21.842361 [debug] [Thread-5 (]: On test.transit.not_null_stg_stop_delays_delay_s.a3a933de21: Close
+[0m19:52:21.847506 [debug] [Thread-4 (]: On test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d: Close
+[0m19:52:21.849931 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1d6ee-87fc-12e7-9905-4041b727ff01) - Closing
+[0m19:52:21.852081 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f2-15b5-939b-ef2ae944ba78) - Closing
+[0m19:52:22.215876 [info ] [Thread-5 (]: 4 of 9 PASS not_null_stg_stop_delays_delay_s ................................... [[32mPASS[0m in 3.53s]
+[0m19:52:22.225466 [debug] [Thread-5 (]: Finished running node test.transit.not_null_stg_stop_delays_delay_s.a3a933de21
+[0m19:52:22.222421 [info ] [Thread-4 (]: 5 of 9 PASS not_null_stg_stop_delays_stop_id ................................... [[32mPASS[0m in 3.54s]
+[0m19:52:22.231581 [debug] [Thread-5 (]: Began running node test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b
+[0m19:52:22.236856 [debug] [Thread-4 (]: Finished running node test.transit.not_null_stg_stop_delays_stop_id.7f6a904d3d
+[0m19:52:22.241363 [info ] [Thread-5 (]: 6 of 9 START test not_null_stg_stop_delays_trip_id ............................. [RUN]
+[0m19:52:22.249884 [debug] [Thread-5 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b) - Creating connection
+[0m19:52:22.255072 [debug] [Thread-5 (]: Acquiring new databricks connection 'test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b'
+[0m19:52:22.259280 [debug] [Thread-5 (]: Began compiling node test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b
+[0m19:52:22.332333 [debug] [Thread-5 (]: Writing injected SQL for node "test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b"
+[0m19:52:22.335680 [debug] [Thread-5 (]: Began executing node test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b
+[0m19:52:22.349568 [debug] [Thread-5 (]: Writing runtime sql for node "test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b"
+[0m19:52:22.352766 [debug] [Thread-5 (]: Using databricks connection "test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b"
+[0m19:52:22.357528 [debug] [Thread-5 (]: On test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b"} */
+
+    
+    select
+      count(*) as failures,
+      count(*) != 0 as should_warn,
+      count(*) != 0 as should_error
+    from (
+      
+    
+  
+    
+    
+
+
+
+select trip_id
+from `workspace`.`dbt`.`stg_stop_delays`
+where trip_id is null
+
+
+
+  
+  
+      
+    ) dbt_internal_test
+[0m19:52:22.360203 [debug] [Thread-5 (]: Opening a new connection, currently in state init
+[0m19:52:23.606407 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1d6ee-8a34-13e5-b916-91fb826ba24b) - Created
+[0m19:52:24.414731 [debug] [Thread-5 (]: SQL status: OK in 2.050 seconds
+[0m19:52:24.423129 [debug] [Thread-5 (]: Databricks adapter: Cursor(session-id=01f1d6ee-8a34-13e5-b916-91fb826ba24b, command-id=01f1d6ee-8a64-1a57-9630-acbc4e63f045) - Closing
+[0m19:52:24.427445 [debug] [Thread-5 (]: On test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b: Close
+[0m19:52:24.430244 [debug] [Thread-5 (]: Databricks adapter: Connection(session-id=01f1d6ee-8a34-13e5-b916-91fb826ba24b) - Closing
+[0m19:52:24.673760 [info ] [Thread-5 (]: 6 of 9 PASS not_null_stg_stop_delays_trip_id ................................... [[32mPASS[0m in 2.43s]
+[0m19:52:24.677173 [debug] [Thread-5 (]: Finished running node test.transit.not_null_stg_stop_delays_trip_id.61e3d29f8b
+[0m19:52:28.111434 [debug] [Thread-6 (]: SQL status: OK in 9.200 seconds
+[0m19:52:28.121431 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1d6ee-87f2-1f33-8a75-e3ff8afa06a7, command-id=01f1d6ee-881f-129e-a652-8e0d7bda1629) - Closing
+[0m19:52:28.245021 [debug] [Thread-7 (]: SQL status: OK in 9.340 seconds
+[0m19:52:28.255374 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f1d6ee-87f0-12c0-a000-c48bfc86afd2, command-id=01f1d6ee-881e-162b-90c3-4c3fb89f7d02) - Closing
+[0m19:52:28.461275 [debug] [Thread-6 (]: On test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238: Close
+[0m19:52:28.463455 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f2-1f33-8a75-e3ff8afa06a7) - Closing
+[0m19:52:28.681093 [debug] [Thread-7 (]: On test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04: Close
+[0m19:52:28.685430 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f1d6ee-87f0-12c0-a000-c48bfc86afd2) - Closing
+[0m19:52:28.878635 [warn ] [Thread-6 (]: 2 of 9 WARN 1597 dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600 . [[33mWARN 1597[0m in 10.20s]
+[0m19:52:28.881550 [debug] [Thread-6 (]: Finished running node test.transit.dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.66e2585238
+[0m19:52:29.029723 [info ] [Thread-7 (]: 3 of 9 PASS dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence  [[32mPASS[0m in 10.35s]
+[0m19:52:29.033888 [debug] [Thread-7 (]: Finished running node test.transit.dbt_utils_unique_combination_of_columns_stg_stop_delays_start_date__trip_id__stop_sequence.d76a594a04
+[0m19:52:29.038575 [debug] [Thread-4 (]: Began running node model.transit.int_stop_delays_flagged
+[0m19:52:29.040864 [info ] [Thread-4 (]: 7 of 9 START sql view model dbt.int_stop_delays_flagged ........................ [RUN]
+[0m19:52:29.043797 [debug] [Thread-4 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.transit.int_stop_delays_flagged) - Creating connection
+[0m19:52:29.045771 [debug] [Thread-4 (]: Acquiring new databricks connection 'model.transit.int_stop_delays_flagged'
+[0m19:52:29.048129 [debug] [Thread-4 (]: Began compiling node model.transit.int_stop_delays_flagged
+[0m19:52:29.055509 [debug] [Thread-4 (]: Writing injected SQL for node "model.transit.int_stop_delays_flagged"
+[0m19:52:29.058439 [debug] [Thread-4 (]: Began executing node model.transit.int_stop_delays_flagged
+[0m19:52:29.066465 [debug] [Thread-4 (]: MATERIALIZING VIEW
+[0m19:52:29.074846 [debug] [Thread-4 (]: Creating view `workspace`.`dbt`.`int_stop_delays_flagged`
+[0m19:52:29.081366 [debug] [Thread-4 (]: Writing runtime sql for node "model.transit.int_stop_delays_flagged"
+[0m19:52:29.084312 [debug] [Thread-4 (]: Using databricks connection "model.transit.int_stop_delays_flagged"
+[0m19:52:29.086456 [debug] [Thread-4 (]: On model.transit.int_stop_delays_flagged: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.int_stop_delays_flagged"} */
+
+  
+  
+  create or replace view `workspace`.`dbt`.`int_stop_delays_flagged`
+  
+  
+  as (
+    select
+    *,
+    day_of_week between 2 and 6
+      and (hour_of_day between 7 and 9 or hour_of_day between 16 and 18) as is_peak,
+    delay_s > 300  as is_late_5min,
+    delay_s < -60  as is_early
+from `workspace`.`dbt`.`stg_stop_delays`
+  )
+
+[0m19:52:29.089296 [debug] [Thread-4 (]: Opening a new connection, currently in state init
+[0m19:52:30.377244 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-8e31-1b3f-b201-7c86d69b3d83) - Created
+[0m19:52:31.364026 [debug] [Thread-4 (]: SQL status: OK in 2.270 seconds
+[0m19:52:31.368997 [debug] [Thread-4 (]: Databricks adapter: Cursor(session-id=01f1d6ee-8e31-1b3f-b201-7c86d69b3d83, command-id=01f1d6ee-8e6c-182a-bcd3-991ecf90260c) - Closing
+[0m19:52:31.372944 [debug] [Thread-4 (]: Applying tags to relation None
+[0m19:52:31.380877 [debug] [Thread-4 (]: On model.transit.int_stop_delays_flagged: Close
+[0m19:52:31.383523 [debug] [Thread-4 (]: Databricks adapter: Connection(session-id=01f1d6ee-8e31-1b3f-b201-7c86d69b3d83) - Closing
+[0m19:52:31.795552 [debug] [Thread-4 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7689511c3150>]}
+[0m19:52:31.799510 [info ] [Thread-4 (]: 7 of 9 OK created sql view model dbt.int_stop_delays_flagged ................... [[32mOK[0m in 2.75s]
+[0m19:52:31.802736 [debug] [Thread-4 (]: Finished running node model.transit.int_stop_delays_flagged
+[0m19:52:31.808126 [debug] [Thread-6 (]: Began running node model.transit.mart_delay_by_stop
+[0m19:52:31.811804 [info ] [Thread-6 (]: 8 of 9 START sql table model dbt_marts.mart_delay_by_stop ...................... [RUN]
+[0m19:52:31.814844 [debug] [Thread-7 (]: Began running node model.transit.mart_punctuality_by_mode
+[0m19:52:31.818710 [debug] [Thread-6 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.transit.mart_delay_by_stop) - Creating connection
+[0m19:52:31.821733 [info ] [Thread-7 (]: 9 of 9 START sql table model dbt_marts.mart_punctuality_by_mode ................ [RUN]
+[0m19:52:31.824688 [debug] [Thread-6 (]: Acquiring new databricks connection 'model.transit.mart_delay_by_stop'
+[0m19:52:31.828913 [debug] [Thread-7 (]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=model.transit.mart_punctuality_by_mode) - Creating connection
+[0m19:52:31.832533 [debug] [Thread-6 (]: Began compiling node model.transit.mart_delay_by_stop
+[0m19:52:31.835360 [debug] [Thread-7 (]: Acquiring new databricks connection 'model.transit.mart_punctuality_by_mode'
+[0m19:52:31.850199 [debug] [Thread-7 (]: Began compiling node model.transit.mart_punctuality_by_mode
+[0m19:52:31.848344 [debug] [Thread-6 (]: Writing injected SQL for node "model.transit.mart_delay_by_stop"
+[0m19:52:31.863969 [debug] [Thread-7 (]: Writing injected SQL for node "model.transit.mart_punctuality_by_mode"
+[0m19:52:31.869326 [debug] [Thread-6 (]: Began executing node model.transit.mart_delay_by_stop
+[0m19:52:31.873583 [debug] [Thread-7 (]: Began executing node model.transit.mart_punctuality_by_mode
+[0m19:52:32.087233 [debug] [Thread-7 (]: MATERIALIZING TABLE
+[0m19:52:32.096386 [debug] [Thread-6 (]: MATERIALIZING TABLE
+[0m19:52:32.441760 [debug] [Thread-6 (]: Using databricks connection "model.transit.mart_delay_by_stop"
+[0m19:52:32.448785 [debug] [Thread-7 (]: Using databricks connection "model.transit.mart_punctuality_by_mode"
+[0m19:52:32.479446 [debug] [Thread-6 (]: On model.transit.mart_delay_by_stop: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.mart_delay_by_stop"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'dbt_marts'
+    AND table_name = 'mart_delay_by_stop'
+[0m19:52:32.507796 [debug] [Thread-6 (]: Opening a new connection, currently in state init
+[0m19:52:32.496068 [debug] [Thread-7 (]: On model.transit.mart_punctuality_by_mode: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.mart_punctuality_by_mode"} */
+SELECT
+    table_catalog,
+    table_schema,
+    table_name,
+    filter_name,
+    target_columns
+  FROM `workspace`.`information_schema`.`row_filters`
+  WHERE table_catalog = 'workspace'
+    AND table_schema = 'dbt_marts'
+    AND table_name = 'mart_punctuality_by_mode'
+[0m19:52:32.518551 [debug] [Thread-7 (]: Opening a new connection, currently in state init
+[0m19:52:33.751565 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f1d6ee-9041-1051-9626-3cf515c3b1bf) - Created
+[0m19:52:33.755492 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1d6ee-9041-183c-bd7f-838b43bab57a) - Created
+[0m19:52:34.437142 [debug] [Thread-7 (]: SQL status: OK in 1.920 seconds
+[0m19:52:34.453338 [debug] [Thread-6 (]: SQL status: OK in 1.950 seconds
+[0m19:52:34.484563 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f1d6ee-9041-1051-9626-3cf515c3b1bf, command-id=01f1d6ee-9076-101a-9d93-cb01a5aebab3) - Closing
+[0m19:52:34.502099 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1d6ee-9041-183c-bd7f-838b43bab57a, command-id=01f1d6ee-9076-1778-8a2e-86538da373e8) - Closing
+[0m19:52:34.666237 [debug] [Thread-7 (]: Writing runtime sql for node "model.transit.mart_punctuality_by_mode"
+[0m19:52:34.676938 [debug] [Thread-6 (]: Writing runtime sql for node "model.transit.mart_delay_by_stop"
+[0m19:52:34.683076 [debug] [Thread-7 (]: Using databricks connection "model.transit.mart_punctuality_by_mode"
+[0m19:52:34.687590 [debug] [Thread-7 (]: On model.transit.mart_punctuality_by_mode: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.mart_punctuality_by_mode"} */
+
+  
+    
+        create or replace table `workspace`.`dbt_marts`.`mart_punctuality_by_mode`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      -- dbt/models/marts/mart_punctuality_by_mode.sql
+select
+    mode,
+    count(*)                                                     as observations,
+    round(avg(delay_min), 2)                                     as avg_delay_min,
+    round(avg(case when not is_late_5min and not is_early then 1.0 else 0.0 end), 3) as share_on_time
+from `workspace`.`dbt`.`int_stop_delays_flagged`
+group by all
+  
+[0m19:52:34.691344 [debug] [Thread-6 (]: Using databricks connection "model.transit.mart_delay_by_stop"
+[0m19:52:34.695266 [debug] [Thread-6 (]: On model.transit.mart_delay_by_stop: /* {"app": "dbt", "dbt_version": "1.12.6", "dbt_databricks_version": "1.13.0", "databricks_sql_connector_version": "4.4.0", "profile_name": "transit", "target_name": "dev", "invocation_id": "6aea8677-7cc2-4e44-b84b-c21c4e87578a", "node_id": "model.transit.mart_delay_by_stop"} */
+
+  
+    
+        create or replace table `workspace`.`dbt_marts`.`mart_delay_by_stop`
+      
+      
+    using delta
+  
+      
+      
+      
+      
+      
+      
+      
+      
+      as
+      -- dbt/models/marts/mart_delay_by_stop.sql
+select
+    stop_id,
+    stop_name,
+    stop_lat,
+    stop_lon,
+    mode,
+    count(*)                  as observations,
+    round(avg(delay_min), 2)  as avg_delay_min
+from `workspace`.`dbt`.`int_stop_delays_flagged`
+group by all
+having count(*) >= 50
+  
+[0m19:52:41.213578 [debug] [Thread-6 (]: SQL status: OK in 6.520 seconds
+[0m19:52:41.218468 [debug] [Thread-6 (]: Databricks adapter: Cursor(session-id=01f1d6ee-9041-183c-bd7f-838b43bab57a, command-id=01f1d6ee-9107-1565-adf3-04b3af941aaf) - Closing
+[0m19:52:41.221436 [debug] [Thread-7 (]: SQL status: OK in 6.530 seconds
+[0m19:52:41.228878 [debug] [Thread-7 (]: Databricks adapter: Cursor(session-id=01f1d6ee-9041-1051-9626-3cf515c3b1bf, command-id=01f1d6ee-9105-13f2-b742-884c16852b51) - Closing
+[0m19:52:41.530484 [debug] [Thread-6 (]: Applying tags to relation None
+[0m19:52:41.528241 [debug] [Thread-7 (]: Applying tags to relation None
+[0m19:52:41.711364 [debug] [Thread-6 (]: On model.transit.mart_delay_by_stop: Close
+[0m19:52:41.736540 [debug] [Thread-7 (]: On model.transit.mart_punctuality_by_mode: Close
+[0m19:52:41.737727 [debug] [Thread-6 (]: Databricks adapter: Connection(session-id=01f1d6ee-9041-183c-bd7f-838b43bab57a) - Closing
+[0m19:52:41.742718 [debug] [Thread-7 (]: Databricks adapter: Connection(session-id=01f1d6ee-9041-1051-9626-3cf515c3b1bf) - Closing
+[0m19:52:42.024162 [debug] [Thread-6 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768951936810>]}
+[0m19:52:42.033297 [info ] [Thread-6 (]: 8 of 9 OK created sql table model dbt_marts.mart_delay_by_stop ................. [[32mOK[0m in 10.21s]
+[0m19:52:42.040919 [debug] [Thread-6 (]: Finished running node model.transit.mart_delay_by_stop
+[0m19:52:42.045741 [debug] [Thread-7 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '6aea8677-7cc2-4e44-b84b-c21c4e87578a', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768973cef1d0>]}
+[0m19:52:42.050590 [info ] [Thread-7 (]: 9 of 9 OK created sql table model dbt_marts.mart_punctuality_by_mode ........... [[32mOK[0m in 10.22s]
+[0m19:52:42.055729 [debug] [Thread-7 (]: Finished running node model.transit.mart_punctuality_by_mode
+[0m19:52:42.063248 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=master) - Creating connection
+[0m19:52:42.066057 [debug] [MainThread]: Acquiring new databricks connection 'master'
+[0m19:52:42.071296 [info ] [MainThread]: 
+[0m19:52:42.074899 [info ] [MainThread]: Finished running 2 table models, 5 data tests, 2 view models in 0 hours 0 minutes and 41.10 seconds (41.10s).
+[0m19:52:42.086959 [debug] [MainThread]: Command end result
+[0m19:52:42.355589 [debug] [MainThread]: Wrote artifact WritableManifest to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/manifest.json
+[0m19:52:42.359289 [debug] [MainThread]: Wrote artifact SemanticManifest to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/semantic_manifest.json
+[0m19:52:42.362719 [debug] [MainThread]: Wrote artifact OsiDocument to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/osi_document.json
+[0m19:52:42.375979 [debug] [MainThread]: Wrote artifact RunExecutionResult to /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/target/run_results.json
+[0m19:52:42.376711 [info ] [MainThread]: 
+[0m19:52:42.377507 [info ] [MainThread]: [33mCompleted with 1 warning:[0m
+[0m19:52:42.378338 [info ] [MainThread]: 
+[0m19:52:42.379332 [warn ] [MainThread]: [[33mWARNING[0m]: in test dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600 (models/staging/_staging.yml)
+[0m19:52:42.380222 [warn ] [MainThread]: [[33mWARNING[0m]: Got 1597 results, configured to warn if != 0
+[0m19:52:42.380942 [info ] [MainThread]: 
+[0m19:52:42.381737 [info ] [MainThread]:   compiled code at target/compiled/transit/models/staging/_staging.yml/dbt_utils_accepted_range_stg_stop_delays_delay_s__7200___3600.sql
+[0m19:52:42.382455 [info ] [MainThread]: 
+[0m19:52:42.383260 [info ] [MainThread]: Done. PASS=8 WARN=1 ERROR=0 SKIP=0 NO-OP=0 REUSED=0 TOTAL=9
+[0m19:52:42.384785 [debug] [MainThread]: Resource report: {"command_name": "build", "command_success": true, "command_wall_clock_time": 50.56597, "process_in_blocks": "9144", "process_kernel_time": 0.909407, "process_mem_max_rss": "281716", "process_out_blocks": "7296", "process_user_time": 15.665572}
+[0m19:52:42.386111 [debug] [MainThread]: Command `dbt build` succeeded at 19:52:42.385895 after 50.57 seconds
+[0m19:52:42.386948 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768977213ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768973302ed0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x768973447910>]}
+[0m19:52:42.387750 [debug] [MainThread]: Flushing usage events
+[0m19:52:44.091789 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:51:23.289882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4b237210>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4b236fd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4b249f10>]}
+
+
+============================== 12:51:23.294409 | f5572aa6-59e2-488c-8033-d6d38fd287b9 ==============================
+[0m12:51:23.294409 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:51:23.295363 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'partial_parse': 'True', 'maximum_seed_size_mib': '1', 'send_anonymous_usage_stats': 'True', 'target_path': 'None', 'log_cache_events': 'False', 'empty': 'None', 'introspect': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'warn_error': 'None', 'version_check': 'True', 'no_print': 'None', 'quiet': 'False', 'debug': 'False', 'write_json': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'fail_fast': 'False', 'use_colors': 'True', 'cache_selected_only': 'False', 'use_experimental_parser': 'False', 'indirect_selection': 'eager', 'hints_enabled': 'True', 'profiles_dir': '.', 'printer_width': '80', 'static_parser': 'True', 'log_format': 'default'}
+[0m12:51:23.318431 [info ] [MainThread]: dbt version: 1.12.6
+[0m12:51:23.319214 [info ] [MainThread]: python version: 3.11.15
+[0m12:51:23.320052 [info ] [MainThread]: python path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/.venv-dbt/bin/python3.11
+[0m12:51:23.320677 [info ] [MainThread]: os info: Linux-6.8.0-147-generic-x86_64-with-glibc2.39
+[0m12:51:23.330488 [error] [MainThread]: [[31mERROR[0m]: Encountered an error:
+Parsing Error
+  Env var required but not provided: 'DATABRICKS_HOST'
+[0m12:51:23.331666 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 0.15009713, "process_in_blocks": "68784", "process_kernel_time": 0.272929, "process_mem_max_rss": "107740", "process_out_blocks": "16", "process_user_time": 1.950761}
+[0m12:51:23.332787 [debug] [MainThread]: Command `dbt debug` failed at 12:51:23.332555 after 0.15 seconds
+[0m12:51:23.333504 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4f1139d0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4b050a50>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x73ce4b106210>]}
+[0m12:51:23.334189 [debug] [MainThread]: Flushing usage events
+[0m12:51:27.277128 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:55:27.646609 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f305b710>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f3142690>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f2ff2f90>]}
+
+
+============================== 12:55:27.650143 | f5712842-80d6-42ce-8359-05a77cc45562 ==============================
+[0m12:55:27.650143 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:55:27.651125 [debug] [MainThread]: running dbt with arguments {'invocation_command': 'dbt debug --profiles-dir .', 'empty': 'None', 'use_experimental_parser': 'False', 'debug': 'False', 'use_colors': 'True', 'send_anonymous_usage_stats': 'True', 'warn_error': 'None', 'fail_fast': 'False', 'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'write_json': 'True', 'log_cache_events': 'False', 'partial_parse': 'True', 'quiet': 'False', 'indirect_selection': 'eager', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'no_print': 'None', 'printer_width': '80', 'log_format': 'default', 'static_parser': 'True', 'maximum_seed_size_mib': '1', 'introspect': 'True', 'cache_selected_only': 'False', 'version_check': 'True', 'hints_enabled': 'True', 'target_path': 'None', 'profiles_dir': '.'}
+[0m12:55:27.666467 [info ] [MainThread]: dbt version: 1.12.6
+[0m12:55:27.667227 [info ] [MainThread]: python version: 3.11.15
+[0m12:55:27.667875 [info ] [MainThread]: python path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/.venv-dbt/bin/python3.11
+[0m12:55:27.668528 [info ] [MainThread]: os info: Linux-6.8.0-147-generic-x86_64-with-glibc2.39
+[0m12:55:29.300343 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:55:29.300945 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:55:29.301395 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:55:30.454954 [info ] [MainThread]: Using profiles dir at .
+[0m12:55:30.455458 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m12:55:30.455930 [info ] [MainThread]: Using dbt_project.yml file at /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/dbt_project.yml
+[0m12:55:30.456338 [info ] [MainThread]: adapter type: databricks
+[0m12:55:30.456733 [info ] [MainThread]: adapter version: 1.13.0
+[0m12:55:30.647339 [info ] [MainThread]: Configuration:
+[0m12:55:30.648106 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:55:30.648724 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:55:30.649544 [info ] [MainThread]: Required dependencies:
+[0m12:55:30.650360 [debug] [MainThread]: Executing "git --help"
+[0m12:55:30.654680 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nQuesti sono i comandi Git comuni usati in varie situazioni:\n\ncrea un'area di lavoro (vedi anche: git help tutorial)\n   clone     Clona un repository in una nuova directory\n   init      Crea un repository Git vuoto o ne reinizializza uno esistente\n\nlavora sulle modifiche correnti (vedi anche: git help everyday)\n   add       Aggiunge i contenuti del file all'indice\n   mv        Sposta o rinomina un file, una directory o un collegamento simbolico\n   restore   Ripristina i file nell'albero di lavoro\n   rm        Rimuove file dall'albero di lavoro e dall'indice\n\nesamina la cronologia e lo stato (vedi anche: git help revisions)\n   bisect    Usa la ricerca binaria per trovare il commit che ha introdotto un bug\n   diff      Visualizza le modifiche fra commit, un commit e l'albero di lavoro, ecc.\n   grep      Stampa le righe corrispondenti a un'espressione regolare\n   log       Visualizza i log dei commit\n   show      Visualizza vari tipi di oggetti\n   status    Visualizza lo stato dell'albero di lavoro\n\naumenta, contrassegna e metti a punto la cronologia comune\n   branch    Elenca, crea o elimina branch\n   commit    Registra modifiche al repository\n   merge     Unisce due o pi\xc3\xb9 cronologie di sviluppo\n   rebase    Riapplica dei commit dopo l'ultimo commit di un branch\n   reset     Ripristina l'HEAD corrente allo stato specificato\n   switch    Passa da un branch a un altro\n   tag       Crea, elenca, elimina o verifica un oggetto tag firmato con GPG\n\ncollabora (vedi anche: git help workflows)\n   fetch     Scarica oggetti e riferimenti da un altro repository\n   pull      Esegue il fetch e l'integrazione con un altro repository o un branch locale\n   push      Aggiorna i riferimenti remoti insieme agli oggetti associati\n\n'git help -a' e 'git help -g' elencano i sottocomandi disponibili e\nalcune guide concettuali. Vedi 'git help <comando>' o 'git help <concetto>'\nper leggere ulteriori informazioni su un sottocomando o su un concetto\nspecifici.\nVedi 'git help git' per una panoramica del sistema.\n""
+[0m12:55:30.655554 [debug] [MainThread]: STDERR: "b''"
+[0m12:55:30.656072 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:55:30.656628 [info ] [MainThread]: Connection:
+[0m12:55:30.657328 [info ] [MainThread]:   host: dbc-e5dac923-558c.cloud.databricks.com
+[0m12:55:30.657896 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/7474651369071668
+[0m12:55:30.658497 [info ] [MainThread]:   catalog: workspace
+[0m12:55:30.659116 [info ] [MainThread]:   schema: dbt
+[0m12:55:30.659942 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m12:55:30.860254 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m12:55:30.860697 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:55:31.507265 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m12:55:31.508139 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m12:55:31.509048 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m12:55:31.510085 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m12:55:31.511544 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:55:31.512389 [debug] [MainThread]: On debug: select 1 as id
+[0m12:55:31.513215 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:55:32.800285 [error] [MainThread]: databricks-sql-connector adapter: ThriftBackend.attempt_request: Exception: ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database
+[0m12:55:32.807806 [error] [MainThread]: Databricks adapter: Connection(session-id=Unknown) - Exception while trying to create connection: Error during request to server: ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database. ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database
+Error properties: attempt=1/30, bounded-retry-delay=None, elapsed-seconds=0.6992769241333008/900.0, error-message=ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database, http-code=404, method=OpenSession, no-retry-reason=non-retryable error, original-exception=ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database, query-id=None, session-id=None
+[0m12:55:32.812185 [debug] [MainThread]: Databricks adapter: Exception while trying to execute query
+select 1 as id
+: Database Error
+  Error during request to server: ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database. ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database
+[0m12:55:32.815208 [debug] [MainThread]: On debug: No close available on handle
+[0m12:55:32.816989 [info ] [MainThread]:   Connection test: [[31mERROR[0m]
+
+[0m12:55:32.818892 [info ] [MainThread]: [31m1 check failed:[0m
+[0m12:55:32.820783 [info ] [MainThread]: dbt was unable to connect to the specified database.
+The database returned the following error:
+
+  >Database Error
+  Database Error
+    Error during request to server: ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database. ENDPOINT_NOT_FOUND: SQL warehouse (7474651369071668, 7474651369071668) does not exist at all in the database
+
+Check your database credentials and try again. For more information, visit:
+https://docs.getdbt.com/docs/configure-your-profile
+
+
+[0m12:55:32.824582 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": false, "command_wall_clock_time": 5.30893, "process_in_blocks": "191128", "process_kernel_time": 0.469272, "process_mem_max_rss": "250784", "process_out_blocks": "32", "process_user_time": 5.478484}
+[0m12:55:32.826854 [debug] [MainThread]: Command `dbt debug` failed at 12:55:32.826502 after 5.31 seconds
+[0m12:55:32.828526 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f6f17ad0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f3123890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7126f30759d0>]}
+[0m12:55:32.830107 [debug] [MainThread]: Flushing usage events
+[0m12:55:33.438476 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m12:56:13.905326 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d009854e890>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0098265450>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d0098264e10>]}
+
+
+============================== 12:56:13.908653 | 7c85ba2e-940d-4f4c-b011-4bee77ecd3e9 ==============================
+[0m12:56:13.908653 [info ] [MainThread]: Running with dbt=1.12.6
+[0m12:56:13.909354 [debug] [MainThread]: running dbt with arguments {'log_path': '/home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/logs', 'write_json': 'True', 'use_experimental_parser': 'False', 'profiles_dir': '.', 'fail_fast': 'False', 'empty': 'None', 'warn_error': 'None', 'send_anonymous_usage_stats': 'True', 'partial_parse': 'True', 'cache_selected_only': 'False', 'introspect': 'True', 'invocation_command': 'dbt debug --profiles-dir .', 'target_path': 'None', 'log_cache_events': 'False', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'hints_enabled': 'True', 'version_check': 'True', 'debug': 'False', 'quiet': 'False', 'log_format': 'default', 'maximum_seed_size_mib': '1', 'static_parser': 'True', 'use_colors': 'True', 'indirect_selection': 'eager', 'no_print': 'None', 'printer_width': '80'}
+[0m12:56:13.921614 [info ] [MainThread]: dbt version: 1.12.6
+[0m12:56:13.922562 [info ] [MainThread]: python version: 3.11.15
+[0m12:56:13.923432 [info ] [MainThread]: python path: /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/.venv-dbt/bin/python3.11
+[0m12:56:13.924108 [info ] [MainThread]: os info: Linux-6.8.0-147-generic-x86_64-with-glibc2.39
+[0m12:56:15.359817 [debug] [MainThread]: Spark adapter: Setting pyhive.hive logging to ERROR
+[0m12:56:15.360452 [debug] [MainThread]: Spark adapter: Setting thrift.transport logging to ERROR
+[0m12:56:15.360921 [debug] [MainThread]: Spark adapter: Setting thrift.protocol logging to ERROR
+[0m12:56:16.086866 [info ] [MainThread]: Using profiles dir at .
+[0m12:56:16.087461 [info ] [MainThread]: Using profiles.yml file at ./profiles.yml
+[0m12:56:16.087993 [info ] [MainThread]: Using dbt_project.yml file at /home/monofascia/DataEngineer/progetti/brisbane-transit-pipeline/dbt/dbt_project.yml
+[0m12:56:16.088447 [info ] [MainThread]: adapter type: databricks
+[0m12:56:16.088909 [info ] [MainThread]: adapter version: 1.13.0
+[0m12:56:16.255935 [info ] [MainThread]: Configuration:
+[0m12:56:16.256509 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m12:56:16.257026 [info ] [MainThread]:   dbt_project.yml file [[32mOK found and valid[0m]
+[0m12:56:16.257501 [info ] [MainThread]: Required dependencies:
+[0m12:56:16.258026 [debug] [MainThread]: Executing "git --help"
+[0m12:56:16.260581 [debug] [MainThread]: STDOUT: "b"uso: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--bare]\n           [--git-dir=<path>] [--work-tree=<path>] [--namespace=<name>]\n           [--config-env=<name>=<envvar>] <command> [<args>]\n\nQuesti sono i comandi Git comuni usati in varie situazioni:\n\ncrea un'area di lavoro (vedi anche: git help tutorial)\n   clone     Clona un repository in una nuova directory\n   init      Crea un repository Git vuoto o ne reinizializza uno esistente\n\nlavora sulle modifiche correnti (vedi anche: git help everyday)\n   add       Aggiunge i contenuti del file all'indice\n   mv        Sposta o rinomina un file, una directory o un collegamento simbolico\n   restore   Ripristina i file nell'albero di lavoro\n   rm        Rimuove file dall'albero di lavoro e dall'indice\n\nesamina la cronologia e lo stato (vedi anche: git help revisions)\n   bisect    Usa la ricerca binaria per trovare il commit che ha introdotto un bug\n   diff      Visualizza le modifiche fra commit, un commit e l'albero di lavoro, ecc.\n   grep      Stampa le righe corrispondenti a un'espressione regolare\n   log       Visualizza i log dei commit\n   show      Visualizza vari tipi di oggetti\n   status    Visualizza lo stato dell'albero di lavoro\n\naumenta, contrassegna e metti a punto la cronologia comune\n   branch    Elenca, crea o elimina branch\n   commit    Registra modifiche al repository\n   merge     Unisce due o pi\xc3\xb9 cronologie di sviluppo\n   rebase    Riapplica dei commit dopo l'ultimo commit di un branch\n   reset     Ripristina l'HEAD corrente allo stato specificato\n   switch    Passa da un branch a un altro\n   tag       Crea, elenca, elimina o verifica un oggetto tag firmato con GPG\n\ncollabora (vedi anche: git help workflows)\n   fetch     Scarica oggetti e riferimenti da un altro repository\n   pull      Esegue il fetch e l'integrazione con un altro repository o un branch locale\n   push      Aggiorna i riferimenti remoti insieme agli oggetti associati\n\n'git help -a' e 'git help -g' elencano i sottocomandi disponibili e\nalcune guide concettuali. Vedi 'git help <comando>' o 'git help <concetto>'\nper leggere ulteriori informazioni su un sottocomando o su un concetto\nspecifici.\nVedi 'git help git' per una panoramica del sistema.\n""
+[0m12:56:16.261189 [debug] [MainThread]: STDERR: "b''"
+[0m12:56:16.261958 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m12:56:16.262928 [info ] [MainThread]: Connection:
+[0m12:56:16.263724 [info ] [MainThread]:   host: dbc-e5dac923-558c.cloud.databricks.com
+[0m12:56:16.264181 [info ] [MainThread]:   http_path: /sql/1.0/warehouses/a63bef4f4eddec4e
+[0m12:56:16.264594 [info ] [MainThread]:   catalog: workspace
+[0m12:56:16.265102 [info ] [MainThread]:   schema: dbt
+[0m12:56:16.266008 [info ] [MainThread]: Registered adapter: databricks=1.13.0
+[0m12:56:16.434141 [debug] [MainThread]: Databricks adapter: DatabricksDBTConnection(session-id=None, name=debug) - Creating connection
+[0m12:56:16.434570 [debug] [MainThread]: Acquiring new databricks connection 'debug'
+[0m12:56:17.035291 [info ] [MainThread]: Databricks adapter:   SPOG host (host_type='workspace'): no
+[0m12:56:17.037462 [info ] [MainThread]: Databricks adapter:   workspace_id (from ?o= in http_path): None
+[0m12:56:17.039602 [info ] [MainThread]: Databricks adapter:   databricks-sql-connector version: 4.4.0 (supported)
+[0m12:56:17.041598 [info ] [MainThread]: Databricks adapter:   databricks-sdk version: 0.117.0 (supported)
+[0m12:56:17.043587 [debug] [MainThread]: Using databricks connection "debug"
+[0m12:56:17.045106 [debug] [MainThread]: On debug: select 1 as id
+[0m12:56:17.046298 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m12:56:19.019624 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1d846-be93-14b7-8aea-fb4a33beb300) - Created
+[0m12:56:23.981782 [debug] [MainThread]: SQL status: OK in 6.940 seconds
+[0m12:56:23.986226 [debug] [MainThread]: Databricks adapter: Cursor(session-id=01f1d846-be93-14b7-8aea-fb4a33beb300, command-id=01f1d846-bf20-1dd3-a5fa-f1f4c4cbb5ab) - Closing
+[0m12:56:24.272155 [debug] [MainThread]: On debug: Close
+[0m12:56:24.272707 [debug] [MainThread]: Databricks adapter: Connection(session-id=01f1d846-be93-14b7-8aea-fb4a33beb300) - Closing
+[0m12:56:24.481538 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m12:56:24.482476 [info ] [MainThread]: [32mAll checks passed![0m
+[0m12:56:24.483884 [debug] [MainThread]: Resource report: {"command_name": "debug", "command_success": true, "command_wall_clock_time": 10.689548, "process_in_blocks": "3360", "process_kernel_time": 0.383565, "process_mem_max_rss": "253472", "process_out_blocks": "40", "process_user_time": 5.436835}
+[0m12:56:24.485261 [debug] [MainThread]: Command `dbt debug` succeeded at 12:56:24.485028 after 10.69 seconds
+[0m12:56:24.486309 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d009c317bd0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d00983eaf90>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x7d009c27bf50>]}
+[0m12:56:24.487276 [debug] [MainThread]: Flushing usage events
+[0m12:56:25.012783 [debug] [MainThread]: An error was encountered while trying to flush usage events

@@ -1,0 +1,8 @@
+# dbt/models/staging/_sources.yml
+version: 2
+sources:
+  - name: silver
+    database: workspace
+    schema: silver
+    tables:
+      - name: stop_delays

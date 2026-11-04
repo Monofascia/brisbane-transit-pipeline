@@ -1,0 +1,24 @@
+# dbt/models/staging/_staging.yml
+version: 2
+models:
+  - name: stg_stop_delays
+    description: Un ritardo per corsa e fermata, ultima osservazione disponibile.
+    data_tests:
+      - dbt_utils.unique_combination_of_columns:
+          arguments:
+            combination_of_columns: [start_date, trip_id, stop_sequence]
+    columns:
+      - name: trip_id
+        data_tests: [not_null]
+      - name: stop_id
+        data_tests: [not_null]
+      - name: delay_s
+        description: Ritardo in secondi; negativo = in anticipo.
+        data_tests:
+          - not_null
+          - dbt_utils.accepted_range:
+              arguments:
+                min_value: -3600
+                max_value: 7200
+              config:
+                severity: warn

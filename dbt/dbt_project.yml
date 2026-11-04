@@ -1,1 +1,11 @@
+# dbt/dbt_project.yml
+name: transit
+version: "1.0.0"
+profile: transit
+model-paths: ["models"]
 
+models:
+  transit:
+    staging:      { +materialized: view }
+    intermediate: { +materialized: view }
+    marts:        { +materialized: table, +schema: marts }
